@@ -1,0 +1,11 @@
+# CCTV 최근증가율 = (2018년도 + 2019년도 + 2020년도) / 2017년 이전치 합
+# 구분 -> 구별, 총계 -> CCTV댓수
+# 무조건 html로 제출할 것
+
+# 이름바꾸기
+iris.rename(columns={'sepal_length':'sl','sepal_width':'sw'}, inplace=True)
+iris.head()
+
+# 이름바꾸기2
+iris.columns = ['sl', 'sw', 'pl', 'pw', 'species']
+iris.head()
